@@ -37,9 +37,9 @@ RUN apt-get update && \
     && rm -rf /var/lib/apt/lists/* wkhtmltox.deb
 
 # install mysql client
-RUN apt-get install --no-install-recommends -y postgresql-client \
-    && rm -f /etc/apt/sources.list.d/pgdg.list \
-    && rm -rf /var/lib/apt/lists/*
+#RUN apt-get install --no-install-recommends -y postgresql-client \
+#    && rm -f /etc/apt/sources.list.d/pgdg.list \
+#    && rm -rf /var/lib/apt/lists/*
 
 # install latest postgresql-client
 # RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ buster-pgdg main' > /etc/apt/sources.list.d/pgdg.list \
